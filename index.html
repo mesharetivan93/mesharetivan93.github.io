@@ -1,306 +1,413 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-type="service" data-radius="soft" data-buttons="arrow" data-motion>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mesharet Ivan Lorica | Customer Success Consultant</title>
-  <meta name="description" content="Customer Success Consultant in the Philippines. SaaS implementation, main client contact for FMCG enterprise accounts, ITIL 4 Foundation, and small tools that automate support work.">
-  <link rel="canonical" href="https://mesharetivan93.github.io/">
-  <meta name="theme-color" content="#0b0f14">
-
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mesharetivan93.github.io/">
-  <meta property="og:title" content="Mesharet Ivan Lorica | Customer Success Consultant">
-  <meta property="og:description" content="SaaS implementation, enterprise client support, and the tools I build to make that work faster.">
-  <meta property="og:image" content="https://mesharetivan93.github.io/assets/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="627">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<title>Mesharet Ivan Lorica | Customer Success Consultant</title>
+<meta name="description" content="Customer Success Consultant in the Philippines. SaaS implementation, main client contact for FMCG enterprise accounts, ITIL 4 Foundation, and small tools that automate support work.">
+<link rel="canonical" href="https://mesharetivan93.github.io/">
+<meta name="theme-color" content="#e2e2e2">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mesharetivan93.github.io/">
+<meta property="og:title" content="Mesharet Ivan Lorica | Customer Success Consultant">
+<meta property="og:description" content="SaaS implementation, enterprise client support, and the tools I build to make that work faster.">
+<meta property="og:image" content="https://mesharetivan93.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Instrument+Sans:wdth,wght@75..100,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<style>
+:root {
+  --p-bg: #e2e2e2; --p-surface: #d6d6d6; --p-ink: #7d0c14; --p-muted: #7a4a4e;
+  --p-accent: #7d0c14; --p-accent-ink: #e2e2e2; --p-action: #7d0c14; --p-action-ink: #e2e2e2;
+  --p-inv-bg: #7d0c14; --p-inv-surface: #862323; --p-inv-ink: #e2e2e2; --p-inv-muted: #d0b3af;
+  --p-inv-accent: #e2e2e2; --p-inv-accent-ink: #7d0c14; --p-inv-action: #e2e2e2; --p-inv-action-ink: #7d0c14;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-text: "Instrument Sans", system-ui, sans-serif;
+  --display-weight: 400; --display-tracking: -0.012em; --display-tracking-xl: -0.016em; --ly-scale: 1.12;
+}
+</style>
+<link rel="stylesheet" href="assets/ui/base.css">
+<link rel="stylesheet" href="assets/ui/window/fragment.css">
+<link rel="stylesheet" href="assets/ui/cursor/fragment.css">
+<link rel="stylesheet" href="assets/ui/integrations/fragment.css">
+<link rel="stylesheet" href="assets/diagrams/diagram.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<style>
+/* page CSS: the portrait sits at its own size on the hero panel, never stretched past 500px */
+.hero__media { display: grid; place-items: center; }
+.hero__portrait { width: min(460px, 84%); aspect-ratio: 1; border-radius: var(--r-lg); overflow: hidden; }
+.hero__portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#value .panel { --p-h: 300px; }
+#projects .panel { --p-h: 320px; }
+#results .stat-list { margin-top: var(--s-7); }
+#experience .section-head { margin-bottom: var(--s-6); }
+#toolkit .grid + .rows { margin-top: var(--s-8); }
+.stat-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-6) var(--s-5); }
+.stat-list p { margin: 0; }
+.stat-list .t-small { max-width: 26ch; }
+.tool-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-3); }
+.tool-list li { display: flex; align-items: center; gap: var(--s-3); min-height: 24px; }
+.tool-list img { height: 20px; width: auto; max-width: 36px; }
+#toolkit h3 { font-family: var(--font-text); font-weight: 500; font-size: var(--t-card); line-height: 1.3; letter-spacing: -0.01em; }
+.exp-org { color: var(--ink); display: block; font-weight: 400; font-size: var(--t-small); }
+.ground-inverse .card > p { color: var(--ink); }
+.footer__col .copy-btn { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.footer__col .copy-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+@media (min-width: 640px) and (max-width: 1023px) {
+  #toolkit .span-3 { grid-column: span 6; }
+  #value .panel { --p-h: 220px; }
+  #projects { --h: 1 !important; }
+  #projects > .wrap { display: flex; flex-direction: column; row-gap: var(--s-7); }
+  #projects .panel { --p-h: 140px; }
+  #projects .proj-shot { display: none; }
+  .footer .grid > .footer__col.span-2 { grid-column: auto / span 3; }
+  .footer .grid > .footer__col.span-4 { grid-column: auto / span 6; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) { #projects .panel { --p-h: 240px; } }
+@media (max-width: 1023px) {
+  .hero .ly-float { display: none; }
+  .footer__legal { flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+  .stat-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 639px) {
+  .hero__portrait { width: min(170px, 50%); }
+  #value .panel { --p-h: 480px; }
+  #projects .panel { --p-h: 80px !important; }
+  .footer__legal { row-gap: var(--s-2); }
+  #projects .group > .section-head { margin-bottom: var(--s-4); }
+  #projects .group > .grid { row-gap: var(--s-5); }
+  .hero .hero__media { min-height: 0; height: auto; }
+  .footer .grid > .footer__col.span-2 { display: none; }
+  #projects .proj-shot, #projects .section-head .muted { display: none; }
+  .hero__kicker { display: none; }
+  .stat-list { grid-template-columns: minmax(0, 1fr); gap: var(--s-5); }
+}
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="wrap nav" aria-label="Main">
-      <a class="brand" href="#top" aria-label="Mesharet Ivan Lorica, back to top"><span class="mark">ML</span><span class="brand-name">Mesharet Ivan Lorica</span></a>
-      <ul class="nav-links">
-        <li><a href="#value">What I bring</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#toolkit">Toolkit</a></li>
-      </ul>
-      <a class="btn btn-sm primary" href="#contact">Get in touch</a>
+<header class="nav nav--split">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="ring" aria-hidden="true"></span>Mesharet Ivan Lorica</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="#value">What I bring</a></div>
+      <div class="nav__item"><a class="nav__link" href="#experience">Experience</a></div>
+      <div class="nav__item">
+        <a class="nav__link" href="#projects">Projects <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <a class="menu-card span-3" href="#projects">
+              <div class="panel"><img class="frame__img" src="assets/project-asana-tracker.png" width="1200" height="627" alt="Asana ticket tracker connect page" loading="lazy"></div>
+              <span class="t-card">Asana ticket tracker</span>
+              <span class="t-small muted">Client tickets in one list</span>
+            </a>
+            <a class="menu-card span-3" href="#projects">
+              <div class="panel"><img class="frame__img" src="assets/project-master-data.png" width="1200" height="627" alt="SFA master data dashboard connection form" loading="lazy"></div>
+              <span class="t-card">SFA master data dashboard</span>
+              <span class="t-small muted">Read and upload master data</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#toolkit">Toolkit</a></div>
     </nav>
-  </header>
+    <div class="nav__actions">
+      <a class="nav__link" href="https://www.linkedin.com/in/mesharet-ivan-lorica" rel="noopener">LinkedIn</a>
+      <a class="btn btn--primary" href="mailto:mesharetivan@gmail.com">Email me</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-text enter">
-          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Customer Success Consultant, Philippines</p>
-          <h1>I keep enterprise clients <span class="hl">live, supported and getting value</span> from their SaaS.</h1>
-          <p class="lead">I run implementations and act as the main point of contact for FMCG enterprise accounts. When the same support task keeps coming back, I build a small tool so nobody has to do it by hand again.</p>
-          <div class="actions">
-            <a class="btn primary" href="mailto:mesharetivan@gmail.com">
-              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg>
-              Email me
-            </a>
-            <a class="btn" href="https://www.linkedin.com/in/mesharet-ivan-lorica" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              View LinkedIn
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-photo enter enter-2">
-          <div class="photo-ring">
-            <img src="assets/profile.png" alt="Portrait of Mesharet Ivan Lorica" width="500" height="500">
-          </div>
-          <div class="chip chip-a"><strong>ITIL 4</strong> Foundation</div>
-          <div class="chip chip-b"><strong>SaaS</strong> implementation</div>
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-6">
+        <p class="hero__kicker"><span class="dot" aria-hidden="true"></span>Mesharet Ivan Lorica, Philippines</p>
+        <h1 id="hero-h">Customer success consulting for enterprise SaaS clients</h1>
+        <p class="hero__lead">I keep FMCG enterprise accounts live, supported and getting value from their SaaS. I run implementations and act as their main point of contact, with ITIL 4 Foundation and IT support experience since 2020.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="mailto:mesharetivan@gmail.com">Email me<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="https://www.linkedin.com/in/mesharet-ivan-lorica" rel="noopener">View LinkedIn</a></div>
+      </div>
+      <div class="hero__media span-6 start-7">
+        <div class="hero__portrait"><img src="assets/profile.png" alt="Portrait of Mesharet Ivan Lorica" width="500" height="500" fetchpriority="high" data-source="client" data-subject="Mesharet Ivan Lorica"></div>
+        <div class="ly-float">
+          <div class="ly-float__row"><span class="ly-live">ITIL 4 Foundation</span><span>In support since 2020</span></div>
+          <div class="ly-float__title">SaaS implementation and client support</div>
         </div>
       </div>
+    </div></div>
+  </section>
+  <section class="section statement" id="results" data-moment="word-highlight" style="--h: 1" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 class="t-label muted" id="how-h">How I work and my support results</h2>
+      <p class="mo-wh__text">When the same support task keeps coming back, I build a <strong>small tool</strong> so the team stops doing it by hand.</p>
+      <ul class="stat-list" aria-label="Results">
+        <li><p class="t-stat">98%</p><p class="t-small muted">CSAT at the Infosys BPM service desk</p></li>
+        <li><p class="t-stat">95%</p><p class="t-small muted">of issues resolved within SLA at Infosys BPM</p></li>
+        <li><p class="t-stat">150+</p><p class="t-small muted">dental clinic clients supported at Everise</p></li>
+        <li><p class="t-stat">Since 2020</p><p class="t-small muted">in IT support, now in customer success</p></li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="wrap">
-        <ul class="stats enter enter-3" aria-label="Results">
-          <li><strong>98%</strong><span>CSAT at the Infosys BPM service desk</span></li>
-          <li><strong>95%</strong><span>of SLA targets met at Infosys BPM</span></li>
-          <li><strong>150+</strong><span>dental clinic clients supported at Everise</span></li>
-          <li><strong>Since 2020</strong><span>in technical support and customer success</span></li>
+  <section class="section" id="value" style="--h: 1; --hm: 2" aria-labelledby="value-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="value-h">What your team gets when I join. <span class="muted">Four things I bring to client work.</span></h2>
+      </div>
+      <div class="grid grid--top">
+        <ul class="rows span-6">
+          <li><span class="rows__name">Implementation and onboarding</span><p>I set up master data, run user training, and stay with the client until they go live. I also prepare the monthly service review.</p></li>
+          <li><span class="rows__name">One point of contact</span><p>I am the client's single point of contact. I work with their sales and IT teams on one side and our product and tech teams on the other.</p></li>
+          <li><span class="rows__name">Service desk discipline</span><p>ITIL 4 Foundation and two and a half years on an ITIL service desk. Tickets get logged, owned and closed.</p></li>
+          <li><span class="rows__name">Automation that saves time</span><p>Small web tools and n8n workflows for repeat work: a ticket tracker on top of Asana, a master data dashboard, and scheduled reminder and report emails.</p><a class="link" href="#projects">See the projects</a></li>
         </ul>
-      </div>
-    </section>
-
-    <section class="section" id="value" aria-labelledby="value-h">
-      <div class="wrap">
-        <p class="kicker">What I bring</p>
-        <h2 id="value-h">What your team gets when I join</h2>
-        <div class="bento">
-          <article class="tile tile-wide">
-            <span class="num">01</span>
-            <h3>Implementation and onboarding</h3>
-            <p>I set up master data, run user training, and stay with the client through go-live. I also prepare the monthly service review.</p>
-          </article>
-          <article class="tile">
-            <span class="num">02</span>
-            <h3>One point of contact</h3>
-            <p>The client talks to me. I work with their sales and IT teams on one side and our product and tech teams on the other.</p>
-          </article>
-          <article class="tile">
-            <span class="num">03</span>
-            <h3>Service desk discipline</h3>
-            <p>ITIL 4 Foundation and two and a half years on an ITIL service desk. Tickets get logged, owned and closed.</p>
-          </article>
-          <article class="tile tile-wide tile-accent">
-            <span class="num">04</span>
-            <h3>Automation that saves time</h3>
-            <p>I build small web tools and n8n workflows for repeat work: a ticket tracker on top of Asana, a master data dashboard, and scheduled reminder and report emails.</p>
-            <a class="text-link" href="#projects">See the projects</a>
-          </article>
+        <div class="span-6 start-7">
+          <div class="panel">
+            <div class="dg" data-diagram><script type="application/json">{"layout":"free","ground":"none","motion":{"pulse":"none"},"alt":"The client's sales and IT teams talk to me, and I work their requests through with our product and tech teams.","nodes":[{"id":"client","label":"Client","icon":"ui:users","meta":"Sales and IT teams","at":[0.17,0.5],"atCompact":[0.5,0.14]},{"id":"me","label":"Me","icon":"ui:user","meta":"One point of contact","at":[0.47,0.5],"atCompact":[0.5,0.42]},{"id":"product","label":"Product team","icon":"ui:layers","at":[0.8,0.29],"atCompact":[0.27,0.76]},{"id":"tech","label":"Tech team","icon":"ui:server","at":[0.8,0.71],"atCompact":[0.73,0.76]}],"edges":[{"from":"client","to":"me"},{"from":"me","to":"product","curve":"elbow"},{"from":"me","to":"tech","curve":"elbow"}]}</script></div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="experience" aria-labelledby="exp-h">
-      <div class="wrap">
-        <p class="kicker">Experience</p>
-        <h2 id="exp-h">From technical support to customer success, since 2020</h2>
-        <ol class="timeline">
-          <li>
-            <div class="when"><span class="badge">Now</span>Feb 2026 to present</div>
-            <div class="what">
-              <h3>Customer Success Consultant</h3>
-              <p class="org">Asiatech Consulting Inc. (ATS), for FieldAssist Philippines</p>
-              <ul>
-                <li>Main point of contact for FMCG enterprise accounts on the FieldAssist sales force automation (SFA) and distributor management (DMS) platform.</li>
-                <li>Run implementation, master data uploads, user training and monthly service reviews.</li>
-                <li>Track client tickets in ServiceNow, Asana and Freshdesk and work them through with the tech team.</li>
-                <li>Built web tools and n8n automations for ticket tracking, master data checks and weekly reports.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="when">Aug 2023 to Feb 2026</div>
-            <div class="what">
-              <h3>Service Desk Analyst</h3>
-              <p class="org">Infosys BPM, managed services</p>
-              <ul>
-                <li>Supported end users of two global consumer brands through an ITIL service desk.</li>
-                <li>Kept a 98% CSAT score and met 95% of SLA targets.</li>
-                <li>Handled accounts, access, Microsoft 365, Active Directory and Citrix issues in ServiceNow.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="when">Feb 2022 to Aug 2023</div>
-            <div class="what">
-              <h3>Technical Support Specialist</h3>
-              <p class="org">Everise, for Carestream Dental</p>
-              <ul>
-                <li>Supported 150+ dental clinic clients using Carestream Dental software.</li>
-                <li>Reached 80% first contact resolution.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="when">Oct 2020 to Oct 2021</div>
-            <div class="what">
-              <h3>Technical Support Representative</h3>
-              <p class="org">Alorica, for UPS WorldShip</p>
-              <ul>
-                <li>Supported users of the UPS WorldShip shipping software.</li>
-                <li>Reached 95% first contact resolution.</li>
-              </ul>
-            </div>
-          </li>
-        </ol>
+  <section class="section" id="experience" style="--h: 1; --hm: 2" aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="exp-h">From technical support to customer success.</h2>
       </div>
-    </section>
+      <ul class="rows">
+        <li><span class="rows__name">Customer Success Consultant<span class="exp-org">Asiatech Consulting Inc. (ATS), for FieldAssist Philippines</span></span><p>Main point of contact for FMCG enterprise accounts on the FieldAssist sales force automation (SFA) and distributor management system (DMS) platform. I run implementation, master data uploads, user training and monthly service reviews. I track client tickets in ServiceNow, Asana and Freshdesk and follow them up with the tech team until closed. I built the web tools and n8n workflows shown below.</p><span class="rows__value">Feb 2026 to present</span></li>
+        <li><span class="rows__name">Service Desk Analyst<span class="exp-org">Infosys BPM, managed services</span></span><p>Supported end users of two global consumer brands through an ITIL service desk. Held a 98% CSAT score and resolved 95% of issues within SLA. Handled account and access requests and Microsoft 365, Active Directory and VPN issues in ServiceNow.</p><span class="rows__value">Aug 2023 to Feb 2026</span></li>
+        <li><span class="rows__name">Technical Support Specialist<span class="exp-org">Everise, for Carestream Dental</span></span><p>Supported 150+ dental clinics on Carestream Dental software, including Citrix and imaging device issues. Reached 80% first contact resolution.</p><span class="rows__value">Feb 2022 to Aug 2023</span></li>
+        <li><span class="rows__name">Technical Support Representative<span class="exp-org">Alorica, for UPS WorldShip</span></span><p>Supported users of the UPS WorldShip shipping software. Reached 95% first contact resolution.</p><span class="rows__value">Oct 2020 to Oct 2021</span></li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="section" id="projects" aria-labelledby="proj-h">
-      <div class="wrap">
-        <p class="kicker">Projects</p>
-        <h2 id="proj-h">Tools I built to cut repeat support work</h2>
-        <div class="projects">
-          <a class="project" href="https://asana-ticket-tracker.onrender.com/" rel="noopener">
-            <div class="shot"><img src="assets/project-asana-tracker.png" alt="Asana ticket tracker connect page" width="1200" height="627"></div>
-            <div class="project-body">
-              <h3>Asana ticket tracker <svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10M7 17L17 7"/></svg></h3>
-              <p>Turns Asana projects into a client ticket list. It shows who owns each ticket, whether it is open or closed, and the latest comment with names. Each visitor connects with their own Asana token, which stays in an encrypted browser cookie. The tool only reads data.</p>
-              <ul class="tags"><li>Node.js</li><li>Asana API</li><li>Render</li></ul>
-              <span class="demo">Open live demo</span>
+  <section class="section g2 g2m ground-inverse" id="projects" style="--h: 2" aria-labelledby="proj-h">
+    <div class="wrap">
+      <div class="group">
+        <div class="section-head">
+          <h2 id="proj-h">Tools I built to cut repeat support work. <span class="muted">Two live demos and the workflows behind my weekly emails.</span></h2>
+        </div>
+        <div class="grid">
+          <article class="card card--row card--open span-6">
+            <h3>Asana ticket tracker</h3>
+            <p>Turns Asana projects into a client ticket list: who owns each ticket, its status, and the latest comment and who wrote it. Each visitor connects with their own Asana token, kept in an encrypted browser cookie. The tool only reads data.</p>
+            <div class="panel">
+              <div class="stage stage--fade-br"><div class="at-corner" style="--ax:24px;--ay:28px;--ax-sm:12px;--ay-sm:16px">
+                <div class="ui ui-panel ui-win" data-ui="window" data-open="Open" data-work="In progress" data-done="Closed">
+                  <div class="ui-win__bar">
+                    <span class="ui-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="ui-win__crumb">Tickets <i>/</i> <b>Open</b></span>
+                    <span class="ui-spacer"></span>
+                    <span class="ui-win__search" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span class="ui-win__ph">Search</span><span class="ui-kbd">/</span></span>
+                  </div>
+                  <div class="ui-win__body">
+                    <nav class="ui-win__side" aria-hidden="true">
+                      <span class="ui-win__nav is-on"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M2.5 9h3l1 1.5h3l1-1.5h3"/><path d="M2.5 9 4 3.5h8L13.5 9v3.5h-11z"/></svg>Open</span>
+                      <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><circle cx="8" cy="6" r="2.5"/><path d="M3.5 13.5c.6-2.3 2.4-3.5 4.5-3.5s3.9 1.2 4.5 3.5"/></svg>By owner</span>
+                      <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><path d="m3.5 8.4 2.8 2.8 6.2-6.4"/></svg>Closed</span>
+                      <span class="ui-win__label">Views</span>
+                      <span class="ui-win__nav"><span class="ui-win__hash">#</span>Bugs</span>
+                      <span class="ui-win__nav"><span class="ui-win__hash">#</span>Requests</span>
+                    </nav>
+                    <div class="ui-win__main">
+                      <div class="ui-win__cols" aria-hidden="true"><span>Owner</span><span>Ticket</span><span>Status</span><span>Age</span></div>
+                      <ul class="ui-win__rows">
+                        <li class="ui-win__row" data-row><span class="ui-avatar" data-tone="1">TT</span><span class="ui-win__who">Tech team</span><span class="ui-win__sub">Report shows the wrong hierarchy</span><span class="ui-win__st" data-st>Open</span><span class="ui-win__age">2h</span></li>
+                        <li class="ui-win__row" data-row><span class="ui-avatar" data-tone="3">PT</span><span class="ui-win__who">Product team</span><span class="ui-win__sub">New field on the order form</span><span class="ui-win__st" data-st>Open</span><span class="ui-win__age">5h</span></li>
+                        <li class="ui-win__row" data-row><span class="ui-avatar" data-tone="4">ML</span><span class="ui-win__who">Mesharet</span><span class="ui-win__sub">Outlet master data upload</span><span class="ui-win__st" data-st>Open</span><span class="ui-win__age">1d</span></li>
+                        <li class="ui-win__row" data-row><span class="ui-avatar" data-tone="2">TT</span><span class="ui-win__who">Tech team</span><span class="ui-win__sub">User cannot log in</span><span class="ui-win__st is-done" data-st>Closed</span><span class="ui-win__age">2d</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
             </div>
-          </a>
-          <a class="project" href="https://fieldassist-masterdata-uploader.onrender.com/" rel="noopener">
-            <div class="shot"><img src="assets/project-master-data.png" alt="SFA master data dashboard connection form" width="1200" height="627"></div>
-            <div class="project-body">
-              <h3>SFA master data dashboard <svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10M7 17L17 7"/></svg></h3>
-              <p>Reads master data from a sales force automation platform through its API, across 84 read endpoints, and can upload changes. It points to the test environment by default and asks for a typed confirmation before any live upload.</p>
-              <ul class="tags"><li>Node.js</li><li>REST API</li><li>Render</li></ul>
-              <span class="demo">Open live demo</span>
-            </div>
-          </a>
-          <article class="project project-flat">
-            <div class="project-body">
-              <img class="flat-logo" src="assets/icons/n8n.svg" alt="n8n" width="76" height="40">
-              <h3>Workflow automations in n8n</h3>
-              <p>Scheduled workflows that send weekly reminders and report emails for my team, so nobody has to remember to send them by hand.</p>
-              <ul class="tags"><li>n8n</li><li>Gmail</li><li>Scheduling</li></ul>
+          </article>
+          <article class="card card--row card--open span-6">
+            <h3>SFA master data dashboard</h3>
+            <p>Reads master data through 84 read endpoints of a sales force automation platform's API and can upload changes. It points to the test environment by default and asks for a typed confirmation before any live upload.</p>
+            <div class="panel">
+              <div class="stage stage--fade-b"><div class="at-corner" style="--ax:max(16px, 50% - 180px);--ay:32px;--ax-sm:12px;--ay-sm:16px">
+                <div class="ui ui-panel ui-cursor" data-ui="cursor">
+                  <div class="ui-head">
+                    <span class="ui-agent" aria-hidden="true"></span>
+                    <div class="ui-title">Master data upload</div>
+                    <span class="ui-spacer"></span>
+                    <span class="ui-chip ui-cursor__state" data-cur-state data-done="Live, confirmed">Test environment</span>
+                  </div>
+                  <div class="ui-cursor__body">
+                    <div class="ui-cursor__text">Uploads go to the test environment. To upload it to live, type the confirmation first.</div>
+                    <div class="ui-cursor__row">
+                      <span class="ui-cursor__ico" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 16 16"><ellipse cx="8" cy="4" rx="5" ry="1.8"/><path d="M3 4v8c0 1 2.2 1.8 5 1.8s5-.8 5-1.8V4M3 8c0 1 2.2 1.8 5 1.8s5-.8 5-1.8"/></svg></span>
+                      <span class="ui-cursor__what"><span class="ui-cursor__name">Outlet master</span><span class="ui-cursor__sub" data-cur-sub data-done="Typed confirmation received">Needs a typed confirmation</span></span>
+                      <span class="ui-cursor__amt">Live</span>
+                    </div>
+                  </div>
+                  <div class="ui-cursor__foot">
+                    <span class="ui-cursor__hint"><span class="ui-kbd">Ctrl</span><span class="ui-kbd">Enter</span></span>
+                    <span class="ui-spacer"></span>
+                    <button class="ui-btn ui-cursor__go" type="button" data-cur-btn data-busy="Uploading" data-done="Uploaded"><span class="ui-spin ui-cursor__spin" aria-hidden="true"></span><svg class="ui-cursor__ok" viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-cur-label>Confirm live upload</span></button>
+                  </div>
+                </div>
+              </div></div>
             </div>
           </article>
         </div>
-        <p class="note">The live demos run on free hosting, so the first visit can take a moment to load.</p>
       </div>
-    </section>
+      <div class="grid">
+        <article class="card card--row card--open span-6">
+          <h3>Workflow automations in n8n</h3>
+          <p>Scheduled workflows that send weekly reminders and report emails for my team, so nobody has to remember to send them by hand.</p>
+          <div class="panel">
+            <div class="stage stage--fade-b"><div class="at-corner" style="--ax:max(16px, 50% - 190px);--ay:32px;--ax-sm:12px;--ay-sm:16px">
+              <div class="ui ui-panel ui-apps" data-ui="integrations">
+                <div class="ui-head">
+                  <div class="ui-title">Weekly report workflow</div>
+                  <span class="ui-spacer"></span>
+                  <div class="ui-meta" data-apps-count>2 connected</div>
+                </div>
+                <ul class="ui-apps__list">
+                  <li class="ui-app is-on">
+                    <span class="ui-logo ui-logo--sm"><img src="assets/icons/n8n.svg" alt="" width="34" height="18" loading="lazy"></span>
+                    <span class="ui-app__text"><span class="ui-app__name">n8n</span><span class="ui-app__sub">Runs the workflow on a schedule</span></span>
+                    <span class="ui-app__state"><span class="ui-chip ui-app__on">Connected</span><button class="ui-btn ui-btn--ghost ui-btn--sm ui-app__connect" type="button"><span class="ui-spin ui-app__spin" aria-hidden="true"></span><span>Connect</span></button></span>
+                  </li>
+                  <li class="ui-app is-on">
+                    <span class="ui-logo ui-logo--sm"><img src="assets/icons/gmail.svg" alt="" width="20" height="20" loading="lazy"></span>
+                    <span class="ui-app__text"><span class="ui-app__name">Gmail</span><span class="ui-app__sub">Sends the reminders and reports</span></span>
+                    <span class="ui-app__state"><span class="ui-chip ui-app__on">Connected</span><button class="ui-btn ui-btn--ghost ui-btn--sm ui-app__connect" type="button"><span class="ui-spin ui-app__spin" aria-hidden="true"></span><span>Connect</span></button></span>
+                  </li>
+                </ul>
+              </div>
+            </div></div>
+          </div>
+        </article>
+        <article class="card card--row card--open span-6">
+          <h3>Try the live demos</h3>
+          <p>They run on free hosting, so the first visit can take a moment to load.</p>
+          <p><a class="link" href="https://asana-ticket-tracker.onrender.com/" rel="noopener">Open the Asana ticket tracker</a><br><a class="link" href="https://fieldassist-masterdata-uploader.onrender.com/" rel="noopener">Open the SFA master data dashboard</a></p>
+          <div class="panel proj-shot"><img class="frame__img" src="assets/project-master-data.png" width="1200" height="627" alt="SFA master data dashboard connection form" loading="lazy"></div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <section class="section" id="toolkit" aria-labelledby="tool-h">
-      <div class="wrap">
-        <p class="kicker">Toolkit</p>
-        <h2 id="tool-h">Tools I work with</h2>
-        <div class="tool-groups">
-          <div class="tool-group">
-            <h3>Ticketing and service</h3>
-            <ul class="tools">
-              <li><img src="assets/icons/asana.svg" alt="" width="20" height="20">Asana</li>
-              <li>ServiceNow</li>
-              <li>Freshdesk</li>
-              <li>ITIL 4 practices</li>
-              <li>SLA and CSAT tracking</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Platforms and IT</h3>
-            <ul class="tools">
-              <li>SFA and DMS platforms</li>
-              <li>Microsoft 365</li>
-              <li><img src="assets/icons/gmail.svg" alt="" width="20" height="20">Google Workspace</li>
-              <li>Active Directory</li>
-              <li>Citrix</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Automation and code</h3>
-            <ul class="tools">
-              <li><img src="assets/icons/n8n.svg" alt="" width="34" height="18">n8n</li>
-              <li><img src="assets/icons/nodejs.svg" alt="" width="20" height="20">Node.js</li>
-              <li><img src="assets/icons/javascript.svg" alt="" width="20" height="20">JavaScript</li>
-              <li><img src="assets/icons/postgres.svg" alt="" width="20" height="20">PostgreSQL</li>
-              <li>REST APIs</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Client work</h3>
-            <ul class="tools">
-              <li>SaaS implementation</li>
-              <li>Master data management</li>
-              <li>User training</li>
-              <li>Service reviews</li>
-              <li>Excel reporting</li>
-            </ul>
-          </div>
+  <section class="section" id="toolkit" style="--h: 1; --hm: 2" aria-labelledby="tool-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="tool-h">Tools I work with. <span class="muted">Ticketing, platforms, automation and client work.</span></h2>
+      </div>
+      <div class="grid">
+        <div class="span-3 stack-4">
+          <h3>Ticketing and service</h3>
+          <ul class="tool-list">
+            <li><img src="assets/icons/asana.svg" alt="" width="20" height="20" loading="lazy">Asana</li>
+            <li>ServiceNow</li>
+            <li>Freshdesk</li>
+            <li>ITIL 4 practices</li>
+            <li>SLA and CSAT tracking</li>
+          </ul>
         </div>
-
-        <div class="creds">
-          <div><h3>Certifications</h3><p>ITIL 4 Foundation<br>TESDA Mechatronics NC II</p></div>
-          <div><h3>Education</h3><p>MFI Polytechnic Institute Inc.<br>Mechatronics, 2011 to 2013</p></div>
-          <div><h3>Languages</h3><p>English<br>Filipino</p></div>
+        <div class="span-3 stack-4">
+          <h3>Platforms and IT</h3>
+          <ul class="tool-list">
+            <li>SFA and DMS platforms</li>
+            <li>Microsoft 365</li>
+            <li>Google Workspace</li>
+            <li>Active Directory</li>
+            <li>Citrix</li>
+          </ul>
+        </div>
+        <div class="span-3 stack-4">
+          <h3>Automation and code</h3>
+          <ul class="tool-list">
+            <li><img src="assets/icons/n8n.svg" alt="" width="34" height="18" loading="lazy">n8n</li>
+            <li><img src="assets/icons/nodejs.svg" alt="" width="20" height="20" loading="lazy">Node.js</li>
+            <li><img src="assets/icons/javascript.svg" alt="" width="20" height="20" loading="lazy">JavaScript</li>
+            <li><img src="assets/icons/postgres.svg" alt="" width="20" height="20" loading="lazy">PostgreSQL</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="span-3 stack-4">
+          <h3>Client work</h3>
+          <ul class="tool-list">
+            <li>SaaS implementation</li>
+            <li>Master data management</li>
+            <li>User training</li>
+            <li>Service reviews</li>
+            <li>Excel reporting</li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-h">
-      <div class="wrap">
-        <div class="contact-card">
-          <p class="kicker">Contact</p>
-          <h2 id="contact-h">Need someone to keep your clients happy and your tickets moving?</h2>
-          <p>I am open to customer success, technical account management and service desk roles. Email me or message me on LinkedIn.</p>
-          <div class="actions">
-            <a class="btn primary btn-lg" href="mailto:mesharetivan@gmail.com">
-              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg>
-              mesharetivan@gmail.com
-            </a>
-            <button class="btn btn-lg" type="button" id="copy-email" data-email="mesharetivan@gmail.com">
-              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-              <span>Copy email</span>
-            </button>
-            <a class="btn btn-lg" href="https://www.linkedin.com/in/mesharet-ivan-lorica" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
-            </a>
-          </div>
-          <p class="where">
-            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-            Muntinlupa City, Philippines
-          </p>
-        </div>
+      <ul class="rows">
+        <li><span class="rows__name">Certifications</span><p>ITIL 4 Foundation. TESDA Mechatronics NC II.</p></li>
+        <li><span class="rows__name">Education</span><p>MFI Polytechnic Institute Inc., Mechatronics, 2011 to 2013.</p></li>
+        <li><span class="rows__name">Languages</span><p>English and Filipino.</p></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer closing footer--dark ground-inverse" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Email me</h2>
+        <p>I am open to customer success, technical account management and service desk roles. Email me or message me on LinkedIn.</p>
       </div>
-    </section>
-  </main>
-
-  <footer class="wrap footer">
-    <p>Mesharet Ivan Lorica, 2026</p>
-    <p>Product names and logos are trademarks of their owners.</p>
-  </footer>
-
-  <script>
-    // Copy-email button: copies the address and shows a short confirmation.
-    (function () {
-      var btn = document.getElementById('copy-email');
-      if (!btn || !navigator.clipboard) return;
-      var label = btn.querySelector('span');
-      btn.addEventListener('click', function () {
-        navigator.clipboard.writeText(btn.dataset.email).then(function () {
-          label.textContent = 'Copied';
-          setTimeout(function () { label.textContent = 'Copy email'; }, 2000);
-        });
+      <a class="btn btn--primary btn--xl btn--wide" href="mailto:mesharetivan@gmail.com">Email me<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark" data-mark="ring" aria-hidden="true"></span>Mesharet Ivan Lorica</a>
+          <p class="footer__lede">Customer Success Consultant in Muntinlupa City, Philippines.</p>
+        </div>
+        <div class="span-2 footer__col"><h3>About</h3><ul><li><a href="#value">What I bring</a></li><li><a href="#experience">Experience</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Work</h3><ul><li><a href="#projects">Projects</a></li><li><a href="#toolkit">Toolkit</a></li></ul></div>
+        <div class="span-4 footer__col"><h3>Contact</h3><ul><li><a href="mailto:mesharetivan@gmail.com">mesharetivan@gmail.com</a></li><li><button class="copy-btn" type="button" id="copy-email" data-email="mesharetivan@gmail.com"><span>Copy email</span></button></li><li><a href="https://www.linkedin.com/in/mesharet-ivan-lorica" rel="noopener">LinkedIn</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Mesharet Ivan Lorica</span>
+        <span>Product names and logos are trademarks of their owners.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="assets/diagrams/mount.js"></script>
+<script>
+  // Copy email button: copies the address and shows a short confirmation.
+  (function () {
+    var btn = document.getElementById('copy-email');
+    if (!btn || !navigator.clipboard) return;
+    var label = btn.querySelector('span');
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(btn.dataset.email).then(function () {
+        label.textContent = 'Copied';
+        setTimeout(function () { label.textContent = 'Copy email'; }, 2000);
       });
-    })();
-  </script>
+    });
+  })();
+</script>
 </body>
 </html>
